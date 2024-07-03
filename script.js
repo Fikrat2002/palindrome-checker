@@ -3,16 +3,17 @@ const checkBtn = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
 function palindrome() {
-  if (textInput.value === '') {
-    console.warn('Please input a value into the text field.');
-    result.innerHTML = '';
+  const inputValue = textInput.value.trim();
+
+  if (inputValue === '') {
+    result.textContent = '';
     return;
   }
 
-  const processedStr = textInput.value.replace(/[\W_]/g, '').toLowerCase();
-  let isPalindrome = true;
+  const processedStr = inputValue.replace(/[\W_]/g, '').toLowerCase();
 
-  for (let i = 0; i < Math.floor(processedStr.length / 2); i += 1) {
+  let isPalindrome = true;
+  for (let i = 0; i < Math.floor(processedStr.length / 2); i++) {
     if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
       isPalindrome = false;
       break;
@@ -20,9 +21,9 @@ function palindrome() {
   }
 
   if (isPalindrome) {
-    result.innerHTML = textInput.value + ' is a palindrome'; 
+    result.textContent = inputValue + ' is a palindrome';
   } else {
-    result.innerHTML = textInput.value + ' is not a palindrome';
+    result.textContent = inputValue + ' is not a palindrome';
   }
 }
 
