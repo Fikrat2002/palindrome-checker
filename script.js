@@ -7,14 +7,13 @@ checkBtn.addEventListener('click', palindrome);
 function palindrome() {
   if (textInput.value === '') {
     console.warn('Please input a value');
-    result.innerHTML = '';
     return;
   }
 
   const processedStr = textInput.value.replace(/[\W_]/g, '').toLowerCase();
   let isPalindrome = true;
 
-  for (let i = 0; i < Math.floor(processedStr.length / 2); i += 1) {
+  for (let i = 0; i < Math.floor(processedStr.length / 2); i += 1) { 
     if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
       isPalindrome = false;
       break;
