@@ -4,7 +4,7 @@ const result = document.getElementById('result');
 
 function palindrome() {
   if (textInput.value === '') {
-    console.warn('Please input a value');
+    console.warn('Please input a value'); // Remove or comment out if not needed
     result.innerHTML = '';
     return;
   }
@@ -27,3 +27,4 @@ function palindrome() {
 }
 
 checkBtn.addEventListener('click', palindrome);
+ 
