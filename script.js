@@ -6,7 +6,7 @@ function palindrome() {
   const inputValue = textInput.value.trim();
 
   if (inputValue === '') {
-    result.textContent = '';
+    result.textContent = 'please enter a valid text';
     return;
   }
 
