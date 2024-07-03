@@ -29,3 +29,4 @@ function palindrome() {
 
 checkBtn.addEventListener('click', palindrome);
 
+
