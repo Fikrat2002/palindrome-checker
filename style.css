@@ -16,7 +16,7 @@ h1 {
 body {
   display: block;
   margin: 0 auto;
-  background-image: linear-gradient(115deg, hwb(198 58% 24% / 0.918), rgba(177, 203, 222, 0.961)), url(https://d1m75rqqgidzqn.cloudfront.net/blog/wp-content/uploads/2020/02/Feb-10-palindrome-for-blog.png);
+  background-image: linear-gradient(115deg, hwb(198 67% 10% / 0.948), rgba(178, 208, 229, 0.811)), url(https://d1m75rqqgidzqn.cloudfront.net/blog/wp-content/uploads/2020/02/Feb-10-palindrome-for-blog.png);
   background-size: cover;
   background-position: center;
   background-repeat: initial;
@@ -40,7 +40,7 @@ p {
   margin-right: 500px;
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: 10px 10px 5px 0px var(--gold);
+  box-shadow: 10px 10px 5px var(--gold);
 }
 
 input {
@@ -52,7 +52,7 @@ input {
   padding-bottom: 30px;
   background-color: var(--white);
   border: solid var(--dark-blue);
-  box-shadow: 10px 10px 5px 0px var(--white);
+  box-shadow: 10px 10px 5px var(--white);
 }
 
 button {
@@ -69,7 +69,7 @@ button {
   color: var(--dark-blue);
   border-radius: 20px;
   box-shadow: var(--gold);
-  box-shadow: 10px 10px 5px 0px var(--gold);
+  box-shadow: 10px 10px 5px var(--gold);
 }
 
 .btn:hover {
@@ -94,7 +94,8 @@ button {
     font-size: 18px;
   }
 
-  input, button {
+  input,
+  button {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -111,7 +112,8 @@ button {
     font-size: 16px;
   }
 
-  input, button {
+  input, 
+  button {
     padding-left: 20px;
     padding-right: 20px;
     width: 80%;
