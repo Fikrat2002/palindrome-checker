@@ -7,7 +7,7 @@ This web application, developed with HTML, CSS, and JavaScript, serves as a pali
 
 - Explore the project in action:
 
-(#<img width="960" alt="Screenshot 2024-06-28 103959" src="https://github.com/Fikrat2002/palindrome-checker/assets/168417613/a4c64376-9ca1-4150-b70a-ffe8e40b4389">
+(#<img width="953" alt="Screenshot 2024-07-02 204815" src="https://github.com/Fikrat2002/palindrome-checker/assets/168417613/32416bca-be69-4113-a985-8501dff5813a">
 )
 
 ## Live Deployment
