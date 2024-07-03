@@ -21,12 +21,10 @@ function palindrome() {
   }
 
   if (isPalindrome) {
-    result.textContent = inputValue + ' is a palindrome';
+    result.textContent = inputValue + 'is a palindrome';
   } else {
-    result.textContent = inputValue + ' is not a palindrome';
+    result.textContent = inputValue + 'is not a palindrome';
   }
 }
 
 checkBtn.addEventListener('click', palindrome);
-
-
