@@ -13,7 +13,7 @@ function palindrome() {
   const processedStr = inputValue.replace(/[\W_]/g, '').toLowerCase();
 
   let isPalindrome = true;
-  for (let i = 0; i < Math.floor(processedStr.length / 2); i++) {
+  for (let i = 0; i < Math.floor(processedStr.length / 2); i += 1) {
     if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
       isPalindrome = false;
       break;
@@ -28,3 +28,4 @@ function palindrome() {
 }
 
 checkBtn.addEventListener('click', palindrome);
+
