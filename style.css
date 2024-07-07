@@ -1,0 +1,126 @@
+:root {
+  --sky: hwb(197 48% 24%);
+  --dark-blue: #0a0371cf;
+  --white: #faf5f5;
+  --light-blue: #99d5facc;
+  --blue: hsla(249, 91%, 50%, 0.906);
+  --gold: hwb(55 85% 2% / 0.929);
+}
+
+h1 {
+  color: var(--dark-blue);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 100px;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(115deg, rgba(223, 222, 169, 0.948), rgba(178, 208, 229, 0.811)), url(https://d1m75rqqgidzqn.cloudfront.net/blog/wp-content/uploads/2020/02/Feb-10-palindrome-for-blog.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: initial;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--light-blue);
+  border: solid var(--dark-blue);
+}
+
+.box {
+  border: 5px solid var(--dark-blue);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 10px 10px 5px var(--gold);
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white);
+  border: solid var(--dark-blue);
+  box-shadow: 10px 10px 5px var(--white);
+}
+
+button {
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--sky);
+  border: solid var(--dark-blue);
+  color: var(--dark-blue);
+  border-radius: 20px;
+  box-shadow: var(--gold);
+  box-shadow: 10px 10px 5px var(--gold);
+}
+
+.btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .box {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  input,
+  button {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: smaller;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  input,
+  button {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
